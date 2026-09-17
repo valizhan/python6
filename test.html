@@ -1,0 +1,606 @@
+﻿<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python бойынша 40 сұрақтық тест</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f5f9;
+            margin: 0;
+            padding: 20px;
+            color: #222;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .info {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fb;
+            border-radius: 10px;
+            border-left: 5px solid #4a6cf7;
+        }
+
+        .question h3 {
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            padding: 10px;
+            margin: 6px 0;
+            background: white;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        label:hover {
+            background: #eef2ff;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            display: block;
+            margin: 30px auto 10px;
+            padding: 14px 35px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            background: #4a6cf7;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3451c7;
+        }
+
+        #result {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .correct {
+            background: #d4edda !important;
+        }
+
+        .wrong {
+            background: #f8d7da !important;
+        }
+
+        .answer-info {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Python бағдарламалау тілі бойынша тест</h1>
+
+    <div class="info">
+        6-сынып | 40 сұрақ | Тіл алфавиті, деректер типтері,
+        арифметикалық амалдар, енгізу және шығару
+    </div>
+
+    <form id="quizForm">
+
+        <!-- 1 -->
+        <div class="question">
+            <h3>1. Python тілінде мәтіндік мән қандай типке жатады?</h3>
+            <label><input type="radio" name="q1" value="A"> A) int</label>
+            <label><input type="radio" name="q1" value="B"> B) str</label>
+            <label><input type="radio" name="q1" value="C"> C) float</label>
+            <label><input type="radio" name="q1" value="D"> D) bool</label>
+        </div>
+
+        <!-- 2 -->
+        <div class="question">
+            <h3>2. Бүтін санның типі қалай жазылады?</h3>
+            <label><input type="radio" name="q2" value="A"> A) str</label>
+            <label><input type="radio" name="q2" value="B"> B) bool</label>
+            <label><input type="radio" name="q2" value="C"> C) int</label>
+            <label><input type="radio" name="q2" value="D"> D) float</label>
+        </div>
+
+        <!-- 3 -->
+        <div class="question">
+            <h3>3. Нақты сандарды сақтау үшін қандай тип қолданылады?</h3>
+            <label><input type="radio" name="q3" value="A"> A) float</label>
+            <label><input type="radio" name="q3" value="B"> B) int</label>
+            <label><input type="radio" name="q3" value="C"> C) str</label>
+            <label><input type="radio" name="q3" value="D"> D) bool</label>
+        </div>
+
+        <!-- 4 -->
+        <div class="question">
+            <h3>4. Логикалық деректер типі:</h3>
+            <label><input type="radio" name="q4" value="A"> A) int</label>
+            <label><input type="radio" name="q4" value="B"> B) float</label>
+            <label><input type="radio" name="q4" value="C"> C) str</label>
+            <label><input type="radio" name="q4" value="D"> D) bool</label>
+        </div>
+
+        <!-- 5 -->
+        <div class="question">
+            <h3>5. Айнымалыға мән меншіктеу үшін қандай белгі қолданылады?</h3>
+            <label><input type="radio" name="q5" value="A"> A) ==</label>
+            <label><input type="radio" name="q5" value="B"> B) =</label>
+            <label><input type="radio" name="q5" value="C"> C) !=</label>
+            <label><input type="radio" name="q5" value="D"> D) &gt;</label>
+        </div>
+
+        <!-- 6 -->
+        <div class="question">
+            <h3>6. x = 15 командасында x нені білдіреді?</h3>
+            <label><input type="radio" name="q6" value="A"> A) оператор</label>
+            <label><input type="radio" name="q6" value="B"> B) айнымалы</label>
+            <label><input type="radio" name="q6" value="C"> C) функция</label>
+            <label><input type="radio" name="q6" value="D"> D) мәтін</label>
+        </div>
+
+        <!-- 7 -->
+        <div class="question">
+            <h3>7. "Python" мәнінің типі қандай?</h3>
+            <label><input type="radio" name="q7" value="A"> A) str</label>
+            <label><input type="radio" name="q7" value="B"> B) int</label>
+            <label><input type="radio" name="q7" value="C"> C) float</label>
+            <label><input type="radio" name="q7" value="D"> D) bool</label>
+        </div>
+
+        <!-- 8 -->
+        <div class="question">
+            <h3>8. 25 мәнінің типі:</h3>
+            <label><input type="radio" name="q8" value="A"> A) str</label>
+            <label><input type="radio" name="q8" value="B"> B) float</label>
+            <label><input type="radio" name="q8" value="C"> C) int</label>
+            <label><input type="radio" name="q8" value="D"> D) bool</label>
+        </div>
+
+        <!-- 9 -->
+        <div class="question">
+            <h3>9. 3.14 мәнінің типі қандай?</h3>
+            <label><input type="radio" name="q9" value="A"> A) int</label>
+            <label><input type="radio" name="q9" value="B"> B) float</label>
+            <label><input type="radio" name="q9" value="C"> C) str</label>
+            <label><input type="radio" name="q9" value="D"> D) bool</label>
+        </div>
+
+        <!-- 10 -->
+        <div class="question">
+            <h3>10. True қандай мән?</h3>
+            <label><input type="radio" name="q10" value="A"> A) Мәтіндік</label>
+            <label><input type="radio" name="q10" value="B"> B) Бүтін</label>
+            <label><input type="radio" name="q10" value="C"> C) Логикалық</label>
+            <label><input type="radio" name="q10" value="D"> D) Нақты</label>
+        </div>
+
+        <!-- 11 -->
+        <div class="question">
+            <h3>11. Python тілінде қосу амалы:</h3>
+            <label><input type="radio" name="q11" value="A"> A) +</label>
+            <label><input type="radio" name="q11" value="B"> B) -</label>
+            <label><input type="radio" name="q11" value="C"> C) *</label>
+            <label><input type="radio" name="q11" value="D"> D) /</label>
+        </div>
+
+        <!-- 12 -->
+        <div class="question">
+            <h3>12. Азайту амалының белгісі:</h3>
+            <label><input type="radio" name="q12" value="A"> A) +</label>
+            <label><input type="radio" name="q12" value="B"> B) /</label>
+            <label><input type="radio" name="q12" value="C"> C) -</label>
+            <label><input type="radio" name="q12" value="D"> D) %</label>
+        </div>
+
+        <!-- 13 -->
+        <div class="question">
+            <h3>13. Көбейту амалының белгісі:</h3>
+            <label><input type="radio" name="q13" value="A"> A) x</label>
+            <label><input type="radio" name="q13" value="B"> B) *</label>
+            <label><input type="radio" name="q13" value="C"> C) ^</label>
+            <label><input type="radio" name="q13" value="D"> D) ×</label>
+        </div>
+
+        <!-- 14 -->
+        <div class="question">
+            <h3>14. Бөлу амалының белгісі:</h3>
+            <label><input type="radio" name="q14" value="A"> A) /</label>
+            <label><input type="radio" name="q14" value="B"> B) //</label>
+            <label><input type="radio" name="q14" value="C"> C) %</label>
+            <label><input type="radio" name="q14" value="D"> D) :</label>
+        </div>
+
+        <!-- 15 -->
+        <div class="question">
+            <h3>15. Дәрежеге шығару операторы:</h3>
+            <label><input type="radio" name="q15" value="A"> A) ^^</label>
+            <label><input type="radio" name="q15" value="B"> B) **</label>
+            <label><input type="radio" name="q15" value="C"> C) //</label>
+            <label><input type="radio" name="q15" value="D"> D) %%</label>
+        </div>
+
+        <!-- 16 -->
+        <div class="question">
+            <h3>16. 2 ** 3 нәтижесі:</h3>
+            <label><input type="radio" name="q16" value="A"> A) 5</label>
+            <label><input type="radio" name="q16" value="B"> B) 6</label>
+            <label><input type="radio" name="q16" value="C"> C) 8</label>
+            <label><input type="radio" name="q16" value="D"> D) 9</label>
+        </div>
+
+        <!-- 17 -->
+        <div class="question">
+            <h3>17. Бүтін бөлікті алу операторы:</h3>
+            <label><input type="radio" name="q17" value="A"> A) /</label>
+            <label><input type="radio" name="q17" value="B"> B) //</label>
+            <label><input type="radio" name="q17" value="C"> C) %</label>
+            <label><input type="radio" name="q17" value="D"> D) **</label>
+        </div>
+
+        <!-- 18 -->
+        <div class="question">
+            <h3>18. Қалдықты алу операторы:</h3>
+            <label><input type="radio" name="q18" value="A"> A) %</label>
+            <label><input type="radio" name="q18" value="B"> B) //</label>
+            <label><input type="radio" name="q18" value="C"> C) /</label>
+            <label><input type="radio" name="q18" value="D"> D) **</label>
+        </div>
+
+        <!-- 19 -->
+        <div class="question">
+            <h3>19. 10 // 3 нәтижесі:</h3>
+            <label><input type="radio" name="q19" value="A"> A) 3</label>
+            <label><input type="radio" name="q19" value="B"> B) 3.33</label>
+            <label><input type="radio" name="q19" value="C"> C) 1</label>
+            <label><input type="radio" name="q19" value="D"> D) 4</label>
+        </div>
+
+        <!-- 20 -->
+        <div class="question">
+            <h3>20. 10 % 3 нәтижесі:</h3>
+            <label><input type="radio" name="q20" value="A"> A) 3</label>
+            <label><input type="radio" name="q20" value="B"> B) 1</label>
+            <label><input type="radio" name="q20" value="C"> C) 0</label>
+            <label><input type="radio" name="q20" value="D"> D) 10</label>
+        </div>
+
+        <!-- 21 -->
+        <div class="question">
+            <h3>21. Пернетақтадан мәлімет енгізу үшін қандай команда қолданылады?</h3>
+            <label><input type="radio" name="q21" value="A"> A) print()</label>
+            <label><input type="radio" name="q21" value="B"> B) input()</label>
+            <label><input type="radio" name="q21" value="C"> C) write()</label>
+            <label><input type="radio" name="q21" value="D"> D) enter()</label>
+        </div>
+
+        <!-- 22 -->
+        <div class="question">
+            <h3>22. Экранға ақпарат шығару командасы:</h3>
+            <label><input type="radio" name="q22" value="A"> A) input()</label>
+            <label><input type="radio" name="q22" value="B"> B) output()</label>
+            <label><input type="radio" name="q22" value="C"> C) print()</label>
+            <label><input type="radio" name="q22" value="D"> D) show()</label>
+        </div>
+
+        <!-- 23 -->
+        <div class="question">
+            <h3>23. input() командасы әдепкіде қандай тип қайтарады?</h3>
+            <label><input type="radio" name="q23" value="A"> A) int</label>
+            <label><input type="radio" name="q23" value="B"> B) str</label>
+            <label><input type="radio" name="q23" value="C"> C) float</label>
+            <label><input type="radio" name="q23" value="D"> D) bool</label>
+        </div>
+
+        <!-- 24 -->
+        <div class="question">
+            <h3>24. Енгізілген мәнді бүтін санға түрлендіру:</h3>
+            <label><input type="radio" name="q24" value="A"> A) str()</label>
+            <label><input type="radio" name="q24" value="B"> B) float()</label>
+            <label><input type="radio" name="q24" value="C"> C) int()</label>
+            <label><input type="radio" name="q24" value="D"> D) bool()</label>
+        </div>
+
+        <!-- 25 -->
+        <div class="question">
+            <h3>25. Нақты санға түрлендіру функциясы:</h3>
+            <label><input type="radio" name="q25" value="A"> A) float()</label>
+            <label><input type="radio" name="q25" value="B"> B) int()</label>
+            <label><input type="radio" name="q25" value="C"> C) str()</label>
+            <label><input type="radio" name="q25" value="D"> D) input()</label>
+        </div>
+
+        <!-- 26 -->
+        <div class="question">
+            <h3>26. f-string жазудың дұрыс түрі:</h3>
+            <label><input type="radio" name="q26" value="A"> A) f"Сәлем {name}"</label>
+            <label><input type="radio" name="q26" value="B"> B) "f Сәлем name"</label>
+            <label><input type="radio" name="q26" value="C"> C) f("Сәлем name")</label>
+            <label><input type="radio" name="q26" value="D"> D) "{f name}"</label>
+        </div>
+
+        <!-- 27 -->
+        <div class="question">
+            <h3>27. f-string ішінде айнымалы қандай жақшаға жазылады?</h3>
+            <label><input type="radio" name="q27" value="A"> A) ()</label>
+            <label><input type="radio" name="q27" value="B"> B) []</label>
+            <label><input type="radio" name="q27" value="C"> C) {}</label>
+            <label><input type="radio" name="q27" value="D"> D) &lt;&gt;</label>
+        </div>
+
+        <!-- 28 -->
+        <div class="question">
+            <h3>28. print(f"Менің жасым {age}") командасының мақсаты:</h3>
+            <label><input type="radio" name="q28" value="A"> A) Мәлімет енгізу</label>
+            <label><input type="radio" name="q28" value="B"> B) Мәтін мен айнымалыны шығару</label>
+            <label><input type="radio" name="q28" value="C"> C) Айнымалыны өшіру</label>
+            <label><input type="radio" name="q28" value="D"> D) Сан қосу</label>
+        </div>
+
+        <!-- 29 -->
+        <div class="question">
+            <h3>29. Жолды экранда жаңа жолдан бастау үшін қандай escape sequence қолданылады?</h3>
+            <label><input type="radio" name="q29" value="A"> A) /n</label>
+            <label><input type="radio" name="q29" value="B"> B) \n</label>
+            <label><input type="radio" name="q29" value="C"> C) \t</label>
+            <label><input type="radio" name="q29" value="D"> D) /t</label>
+        </div>
+
+        <!-- 30 -->
+        <div class="question">
+            <h3>30. \t escape sequence не үшін қолданылады?</h3>
+            <label><input type="radio" name="q30" value="A"> A) Жаңа жол</label>
+            <label><input type="radio" name="q30" value="B"> B) Табуляция</label>
+            <label><input type="radio" name="q30" value="C"> C) Дәйексөз</label>
+            <label><input type="radio" name="q30" value="D"> D) Бөлу</label>
+        </div>
+
+        <!-- 31 -->
+        <div class="question">
+            <h3>31. Жол ішінде қос тырнақшаны көрсету үшін қандай escape sequence қолданылады?</h3>
+            <label><input type="radio" name="q31" value="A"> A) \'</label>
+            <label><input type="radio" name="q31" value="B"> B) \"</label>
+            <label><input type="radio" name="q31" value="C"> C) \\</label>
+            <label><input type="radio" name="q31" value="D"> D) \n</label>
+        </div>
+
+        <!-- 32 -->
+        <div class="question">
+            <h3>32. Жол ішінде кері көлбеу сызықты (backslash) шығару:</h3>
+            <label><input type="radio" name="q32" value="A"> A) \n</label>
+            <label><input type="radio" name="q32" value="B"> B) \t</label>
+            <label><input type="radio" name="q32" value="C"> C) \\</label>
+            <label><input type="radio" name="q32" value="D"> D) \b</label>
+        </div>
+
+        <!-- 33 -->
+        <div class="question">
+            <h3>33. Бір тырнақшаны шығару үшін қолданылатын escape sequence:</h3>
+            <label><input type="radio" name="q33" value="A"> A) \'</label>
+            <label><input type="radio" name="q33" value="B"> B) \"</label>
+            <label><input type="radio" name="q33" value="C"> C) \\</label>
+            <label><input type="radio" name="q33" value="D"> D) \n</label>
+        </div>
+
+        <!-- 34 -->
+        <div class="question">
+            <h3>34. Escape sequence қандай символдан басталады?</h3>
+            <label><input type="radio" name="q34" value="A"> A) /</label>
+            <label><input type="radio" name="q34" value="B"> B) \</label>
+            <label><input type="radio" name="q34" value="C"> C) #</label>
+            <label><input type="radio" name="q34" value="D"> D) @</label>
+        </div>
+
+        <!-- 35 -->
+        <div class="question">
+            <h3>35. print("Hello\nWorld") нәтижесі қандай?</h3>
+            <label><input type="radio" name="q35" value="A"> A) Hello World бір жолда</label>
+            <label><input type="radio" name="q35" value="B"> B) Hello және World екі жолда</label>
+            <label><input type="radio" name="q35" value="C"> C) Hello\nWorld</label>
+            <label><input type="radio" name="q35" value="D"> D) Қате</label>
+        </div>
+
+        <!-- 36 -->
+        <div class="question">
+            <h3>36. 7 + 3 * 2 өрнегінің нәтижесі:</h3>
+            <label><input type="radio" name="q36" value="A"> A) 20</label>
+            <label><input type="radio" name="q36" value="B"> B) 13</label>
+            <label><input type="radio" name="q36" value="C"> C) 17</label>
+            <label><input type="radio" name="q36" value="D"> D) 10</label>
+        </div>
+
+        <!-- 37 -->
+        <div class="question">
+            <h3>37. (7 + 3) * 2 нәтижесі:</h3>
+            <label><input type="radio" name="q37" value="A"> A) 13</label>
+            <label><input type="radio" name="q37" value="B"> B) 17</label>
+            <label><input type="radio" name="q37" value="C"> C) 20</label>
+            <label><input type="radio" name="q37" value="D"> D) 14</label>
+        </div>
+
+        <!-- 38 -->
+        <div class="question">
+            <h3>38. Python тілінде түсініктеме жазу үшін қандай символ қолданылады?</h3>
+            <label><input type="radio" name="q38" value="A"> A) //</label>
+            <label><input type="radio" name="q38" value="B"> B) #</label>
+            <label><input type="radio" name="q38" value="C"> C) //</label>
+            <label><input type="radio" name="q38" value="D"> D) --</label>
+        </div>
+
+        <!-- 39 -->
+        <div class="question">
+            <h3>39. Төмендегі кодтың нәтижесі қандай?<br><br>
+                <code>x = 5<br>y = 3<br>print(x + y)</code>
+            </h3>
+            <label><input type="radio" name="q39" value="A"> A) 2</label>
+            <label><input type="radio" name="q39" value="B"> B) 8</label>
+            <label><input type="radio" name="q39" value="C"> C) 15</label>
+            <label><input type="radio" name="q39" value="D"> D) 53</label>
+        </div>
+
+        <!-- 40 -->
+        <div class="question">
+            <h3>40. Төмендегі кодтың нәтижесі қандай?<br><br>
+                <code>name = "Aruzhan"<br>age = 12<br>print(f"{name} {age} жаста")</code>
+            </h3>
+            <label><input type="radio" name="q40" value="A"> A) name age жаста</label>
+            <label><input type="radio" name="q40" value="B"> B) Aruzhan 12 жаста</label>
+            <label><input type="radio" name="q40" value="C"> C) "Aruzhan" "age"</label>
+            <label><input type="radio" name="q40" value="D"> D) Қате</label>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">
+            Тестті аяқтау
+        </button>
+
+    </form>
+
+    <div id="result"></div>
+
+</div>
+
+<script>
+
+const answers = {
+    q1: "B",
+    q2: "C",
+    q3: "A",
+    q4: "D",
+    q5: "B",
+    q6: "B",
+    q7: "A",
+    q8: "C",
+    q9: "B",
+    q10: "C",
+    q11: "A",
+    q12: "C",
+    q13: "B",
+    q14: "A",
+    q15: "B",
+    q16: "C",
+    q17: "B",
+    q18: "A",
+    q19: "A",
+    q20: "B",
+    q21: "B",
+    q22: "C",
+    q23: "B",
+    q24: "C",
+    q25: "A",
+    q26: "A",
+    q27: "C",
+    q28: "B",
+    q29: "B",
+    q30: "B",
+    q31: "B",
+    q32: "C",
+    q33: "A",
+    q34: "B",
+    q35: "B",
+    q36: "B",
+    q37: "C",
+    q38: "B",
+    q39: "B",
+    q40: "B"
+};
+
+function checkAnswers() {
+
+    let score = 0;
+    let total = 40;
+
+    for (let i = 1; i <= total; i++) {
+
+        const question = document.querySelector(
+            'input[name="q' + i + '"]:checked'
+        );
+
+        const labels = document.querySelectorAll(
+            'input[name="q' + i + '"]'
+        );
+
+        labels.forEach(input => {
+            input.parentElement.classList.remove("correct", "wrong");
+        });
+
+        if (question) {
+
+            if (question.value === answers["q" + i]) {
+                score++;
+                question.parentElement.classList.add("correct");
+            } else {
+                question.parentElement.classList.add("wrong");
+
+                labels.forEach(input => {
+                    if (input.value === answers["q" + i]) {
+                        input.parentElement.classList.add("correct");
+                    }
+                });
+            }
+
+        } else {
+
+            labels.forEach(input => {
+                if (input.value === answers["q" + i]) {
+                    input.parentElement.classList.add("correct");
+                }
+            });
+
+        }
+    }
+
+    let percent = (score / total) * 100;
+
+    let grade;
+
+    if (percent >= 90) {
+        grade = "Өте жақсы!";
+    } else if (percent >= 75) {
+        grade = "Жақсы!";
+    } else if (percent >= 50) {
+        grade = "Қанағаттанарлық.";
+    } else {
+        grade = "Қайталап дайындалу қажет.";
+    }
+
+    document.getElementById("result").innerHTML =
+        "Нәтиже: " + score + " / " + total +
+        "<br>" + percent.toFixed(0) + "% — " + grade;
+}
+
+</script>
+
+</body>
+</html>
